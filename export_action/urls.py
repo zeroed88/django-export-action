@@ -4,6 +4,8 @@ from .views import AdminExport
 
 view = staff_member_required(AdminExport.as_view())
 
+app_name="export_action"
+
 urlpatterns = [
     url(r'^export/$', view, name="export"),
 ]
